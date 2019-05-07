@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="threadSuiteTest" parallel="methods" thread-count="10">
+    <test name="threadTest">
+        <classes>
+            <class name="com.course.testng.multiThread.MultiThreadOnXml"/>
+        </classes>
+    </test>
+</suite>

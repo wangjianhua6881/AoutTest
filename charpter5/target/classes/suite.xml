@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 测试套级别-对应beforeSuite、afterSuite -->
+<suite name="testSuite">
+    <!-- Test级别-对应beforeTest、afterTest -->
+    <test name="login">
+        <classes>
+            <class name="com.course.testng.Suite.SuiteConfig"/>
+            <class name="com.course.testng.Suite.LoginTest"/>
+        </classes>
+    </test>
+    <test name="pay">
+        <classes>
+            <class name="com.course.testng.Suite.PayTest"/>
+        </classes>
+    </test>
+</suite>

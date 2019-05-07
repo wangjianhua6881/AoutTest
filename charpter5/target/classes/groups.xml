@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="testSuite">
+    <!-- 这里运行了全部的组，但是我只想运行一部分指定的组 -->
+    <test name="myTest">
+        <classes>
+            <class name="com.course.testng.groups.GroupsOnClass1"/>
+            <class name="com.course.testng.groups.GroupsOnClass2"/>
+            <class name="com.course.testng.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+
+    <!-- 注意⚠️ 这里添加了groups(组)-> run(指定运行)-> include(包含)-->
+    <test name="myTest2">
+        <groups>
+            <run>
+                <include name="student"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.testng.groups.GroupsOnClass1"/>
+            <class name="com.course.testng.groups.GroupsOnClass2"/>
+            <class name="com.course.testng.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+</suite>
