@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<suite name="threadSuiteTest" parallel="methods" thread-count="3">
-    <test name="threadTest">
-        <classes>
+<suite name="threadSuiteTest" parallel="classes" thread-count="2">
+    <!--
+    tests级别：不同的test tag标签下的用例 可以用不同的线程去执行
+              相同的test ta标签下的用例，只能用同一个线程去执行
+
+    thread-count:代表了最大线程数
+
+    xml文件配置这种方式不能指定线程池，只有方法上才可以指定线程池
+    -->
+    <test name="threadTest1">
+        <classes >
             <class name="com.course.testng.multiThread.MultiThreadOnXml"/>
+            <class name="com.course.testng.multiThread.MultiThreadOnXml2"/>
         </classes>
     </test>
 </suite>
