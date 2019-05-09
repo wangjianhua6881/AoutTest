@@ -1,0 +1,30 @@
+[
+  {
+    "description":"这是一个重定向到百度的接口，外链",
+    "request":{
+      "uri":"/get/redirect/baidu",
+      "method":"get"
+    },
+    "redirectTo":"https://www.baidu.com"
+  },
+  {
+    "description":"这是一个重定向到我内链到接口",
+    "request":{
+      "uri":"/myAPI"
+    },
+    "redirectTo":"/ridirect/new"
+  },
+  {
+    "description":"这是目标API",
+    "request":{
+      "uri":"/ridirect/new",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "data":"我成功啦！！！",
+        "message":"success"
+      }
+    }
+  }
+]

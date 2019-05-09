@@ -1,0 +1,26 @@
+[
+  {
+    "description":"这是一个不带参数带GET请求",
+    "request":{
+      "uri":"/getMethod",
+      "method":"get"
+    },
+    "response":{
+      "text":"我接收到了一个没有带参数带get请求"
+    }
+  },
+  {
+    "description": "这是一个带参数带GET请求",
+    "request":{
+      "uri":"/getMethodParameter",
+      "method":"get",
+      "queries":{
+        "name":"胡汉三",
+        "age":"18"
+      }
+    },
+    "response":{
+      "text":"我胡汉三又TM回来啦！！！"
+    }
+  }
+]

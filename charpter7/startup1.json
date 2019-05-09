@@ -1,0 +1,11 @@
+[
+  {
+    "description":"这是我的第一个moco例子",
+    "request":{
+      "uri":"/demo"
+    },
+    "response":{
+      "text":"这是第一个响应内容"
+    }
+  }
+]

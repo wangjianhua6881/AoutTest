@@ -1,0 +1,26 @@
+[
+  {
+    "description":"这是我的第一个带headers带请求",
+    "request":{
+      "uri":"/post/headers",
+      "method":"post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "name":"wanglaosi",
+        "sex":"woman"
+      }
+    },
+    "response":{
+      "status":200,
+      "json":{
+        "data":"王老四，你又回来啦！",
+        "message":"success"
+      }
+    }
+  }
+]

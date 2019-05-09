@@ -1,0 +1,26 @@
+[
+{
+  "description":"这是我的第一个post请求",
+  "request":{
+    "uri":"/postMethod",
+    "method":"post"
+  },
+  "response":{
+    "text":"这是我的第一个moco的post请求"
+  }
+},
+  {
+    "description":"这是我的第一个带参数带POST请求",
+    "request":{
+      "uri":"postMethodParameter",
+      "method":"post",
+      "forms":{
+        "name":"huhansan",
+        "sex":"man"
+      }
+    },
+    "response":{
+      "text":"我胡汉三带着参数回来了！！！"
+    }
+  }
+]
