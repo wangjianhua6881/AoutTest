@@ -1,4 +1,17 @@
-[
+[ {
+    "description":"这是一个会返回cookies值的接口请求",
+    "request":{
+      "uri":"/get/returnCookies",
+      "method":"get"
+    },
+    "response":{
+      "cookies":{
+        "login":"true"
+      },
+      "text":"恭喜获取cookies成功！success"
+    }
+
+  },
   {
     "description":"这是一个带Cookies的get请求",
     "request":{
@@ -30,6 +43,52 @@
       "json":{
         "data":"欢迎你回来，胡汉三！",
         "message":"success"
+      }
+    }
+  },
+  {
+    "description":"这是我的第一个带headers带请求",
+    "request":{
+      "uri":"/post/headers",
+      "method":"post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "name":"wanglaosi",
+        "sex":"woman"
+      }
+    },
+    "response":{
+      "status":200,
+      "json":{
+        "data":"王老四，你又回来啦！",
+        "message":"success"
+      }
+    }
+  },
+  {
+    "description":"这次的post请求参数是一个对象，哇咔咔",
+    "request":{
+      "uri":"/post/object/user",
+      "method":"post",
+      "json":{
+        "User":{
+          "userName":"wangdada",
+          "userAge":"88"
+        }
+      },
+      "cookies":{
+        "regist":"zhuce"
+      }
+    },
+    "response":{
+      "json":{
+        "data":"恭喜，注册成功！",
+        "status":"2000"
       }
     }
   }

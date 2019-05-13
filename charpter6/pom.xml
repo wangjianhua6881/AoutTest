@@ -25,7 +25,7 @@
 
     <dependencies>
 
-        <!-- 单独的extentsreport包 -->
+        <!-- 生成日志用的单独的extentsreport包 -->
         <dependency>
             <groupId>com.relevantcodes</groupId>
             <artifactId>extentreports</artifactId>

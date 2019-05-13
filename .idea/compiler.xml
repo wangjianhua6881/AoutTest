@@ -9,6 +9,7 @@
         <module name="charpter5" />
         <module name="charpter6" />
         <module name="charpter7" />
+        <module name="charpter8" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="charpter5" target="1.5" />
       <module name="charpter6" target="6" />
       <module name="charpter7" target="1.5" />
+      <module name="charpter8" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
